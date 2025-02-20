@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgb(27, 23, 23) 20%, rgb(15, 5, 5) 80%);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 300px;
+    height: 430PX;
+    background-color: rgb(58, 56, 56);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),
+                0px 10px 20px rgba(255, 255, 255, 0.2);
+    transform: perspective(800px) rotateX(1deg) rotateY(2deg);
+    border: 2px solid rgb(41, 39, 39);  
+}
+
+.cal-body{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(7, 45px);
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;    
+ 
+    
+}
+
+.display{
+    margin: 20px 0;
+}
+input{
+    width: 240px;
+    height: 100%;
+    background-color: rgb(55, 86, 133);
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    box-shadow: 1px 0 5px 2px black;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#zero{
+    grid-area: 6/1/7/3;
+    
+}
+
+#equal{
+    grid-area:5/4/7/5;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 1px 0 5px 2px black;
+    
+}
+#zero {
+    margin:6px;
+}
+
+#equal{
+    margin: 6px 8px;
+}
+
+.row1{
+    padding: 10px 12px;
+    margin-top: 10px;
+}
+
+button{
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(228, 228, 225);
+}
+
+button:hover{
+    background-color: rgb(182, 175, 175);
+}
+button:active{
+    background-color: rgb(69, 83, 214);
+}
+p{
+    line-height: 5px;  
+}
+
+#mc{
+    padding: 8px 15px;
+}
+
+#zero button{
+    width: 100%;
+}
+
+#equal button{
+    height: 100%;
+}
