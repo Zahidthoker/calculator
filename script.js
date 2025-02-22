@@ -13,20 +13,19 @@ button.forEach((element) => {
             display.value = num1;
         }else
         if(element.textContent =='+' || element.textContent =='-' ||element.textContent =='/' ||element.textContent =='x'){
-            if(num1==''){
+            if(num1=='' && element.textContent=='-'){  // if minus is pressed first before any any number;
+                num1+=element.textContent;
+                display.value = num1;
+            }
+            else if(num1==''){
                 operator = element.textContent;
                 display.value=element.textContent;
-            }else if(num1=='' && element.textContent=='-'){
-                    
-                
-
             }else{
                 operator = element.textContent;
                 num2 = num1;
                 num1='';
                 display.value=element.textContent; 
             }
-            console.log(operator)
         }
         else if(element.textContent == '='){
             if(operator == '+'){
